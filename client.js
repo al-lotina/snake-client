@@ -17,6 +17,10 @@ const connect = function() {
     conn.write('Name: ALQ');
   });
 
+  conn.on('connect', () => {
+    conn.write('Move: up');
+  });
+
   return conn;
 };
 
