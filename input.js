@@ -27,5 +27,10 @@ const setupInput = function(conn) {
 
   return stdin;
 };
-// Export the setupInput function (as part of an object) ?
+
 module.exports = setupInput;
+/* or Export the setupInput function as part of an object:
+module.exports = {
+  setupInput
+};
+*/

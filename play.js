@@ -1,9 +1,10 @@
-// const net = require('net');
-// object { connect } instead  of variable ?
 const connect = require('./client');
-// console.log('Connecting ...');
-connect();
-// object { setupInput } instead  of variable ?
+// or const { connect } = require('./client'); if Exports is set up as object
+
 const setupInput = require('./input');
+// or const { setupInput } = require('./input'); if Exports is set up as object
+
+// connect();
 
 setupInput(connect());
+
