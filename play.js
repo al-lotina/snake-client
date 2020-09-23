@@ -6,4 +6,4 @@ connect();
 // object { setupInput } instead  of variable ?
 const setupInput = require('./input');
 
-setupInput();
+setupInput(connect());
